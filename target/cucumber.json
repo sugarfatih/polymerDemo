@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-14T17:43:27.238Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2638000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.polymer.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User creates Todo Items and Edits second item",
+        "description": "",
+        "id": "create-todo-items;user-creates-todo-items-and-edits-second-item",
+        "after": [
+          {
+            "result": {
+              "duration": 840000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.polymer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user is in the main page",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.theUserIsInTheMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks \"JavaScript\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JavaScript\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.polymer.step_definitions.TodoStepDefs.userClicksTab(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 538000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user clicks \"Polymer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Polymer\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.polymer.step_definitions.TodoStepDefs.userClicks(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 711000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user creates to do items as below",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.userCreatesToDoItemsAsBelow(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Todo1"
+                ]
+              },
+              {
+                "cells": [
+                  "Todo2"
+                ]
+              },
+              {
+                "cells": [
+                  "Todo3"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 448000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user edit \"Todo3\" as \"Todo3New\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Todo3\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Todo3New\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.polymer.step_definitions.TodoStepDefs.user_edit_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Todo item updated successfully",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.todo_item_updated_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@T2"
+          }
+        ]
+      }
+    ],
+    "name": "Create Todo Items",
+    "description": "",
+    "id": "create-todo-items",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/todo.feature",
+    "tags": []
+  }
+]
