@@ -1,8 +1,8 @@
 Feature: Create Todo Items
 
-  @T1
+  @T1 @All
   Scenario: User creates two Todo Items
-    Given the user is in the main page
+    Given the user is on the main page
     When user clicks "JavaScript" tab
     And user clicks "Polymer"
     And user creates to do items as below
@@ -10,14 +10,13 @@ Feature: Create Todo Items
       | Todo2 |
     Then Todo items created successfully
 
-  @T2
+  @T2 @All
   Scenario: User creates Todo Items and Edits second item
-    Given the user is in the main page
+    Given the user is on the main page
     When user clicks "JavaScript" tab
     And user clicks "Polymer"
     And user creates to do items as below
       | Todo1 |
       | Todo2 |
-      | Todo3 |
-    And user edit "Todo3" as "Todo3New"
+    And user edit "Todo2" as "Todo2New"
     Then Todo item updated successfully

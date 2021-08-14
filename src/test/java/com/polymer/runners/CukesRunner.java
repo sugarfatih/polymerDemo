@@ -8,14 +8,13 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         plugin = {"json:target/cucumber.json",
-                "html:target/default-html-reports",
-                "rerun:target/rerun.txt"},
+                "html:target/default-html-reports"
+                },
         features = "src/test/resources/features/",
         glue = "com/polymer/step_definitions",
         dryRun = false,
-        tags = "@T2"
+        tags = "@All"
 )
-
 
 public class CukesRunner {
 }

@@ -17,8 +17,8 @@ public class TodoStepDefs {
     List<String> todoItemTextList = new ArrayList<>();
 
 
-    @Given("the user is in the main page")
-    public void theUserIsInTheMainPage() {
+    @Given("the user is on the main page")
+    public void theUserIsOnTheMainPage() {
         Driver.get().get(ConfigurationReader.get("url"));
     }
 
@@ -41,7 +41,7 @@ public class TodoStepDefs {
                 new TodoPage().createTodoItem(todo);
 
             } catch (NoSuchElementException e) {
-                System.out.println(e);
+                break;
             }
         }
     }
@@ -59,9 +59,10 @@ public class TodoStepDefs {
 
     @Then("Todo items created successfully")
     public void todo_items_created_successfully() {
-        for (String text: todoItemTextList ){
-           Assert.assertTrue(new TodoPage().isTodoElementVisible(text));
+        for (String text : todoItemTextList) {
+            Assert.assertTrue(new TodoPage().isTodoElementVisible(text));
         }
 
     }
+
 }

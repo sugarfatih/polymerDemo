@@ -3,11 +3,136 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-14T17:43:27.238Z",
+        "start_timestamp": "2021-08-14T22:12:59.435Z",
         "before": [
           {
             "result": {
-              "duration": 2638000000,
+              "duration": 2933000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.polymer.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User creates two Todo Items",
+        "description": "",
+        "id": "create-todo-items;user-creates-two-todo-items",
+        "after": [
+          {
+            "result": {
+              "duration": 839000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.polymer.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1545000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user is on the main page",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.theUserIsOnTheMainPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks \"JavaScript\" tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"JavaScript\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.polymer.step_definitions.TodoStepDefs.userClicksTab(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 572000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks \"Polymer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Polymer\"",
+                  "offset": 12
+                }
+              ],
+              "location": "com.polymer.step_definitions.TodoStepDefs.userClicks(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 530000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user creates to do items as below",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.userCreatesToDoItemsAsBelow(java.util.List\u003cjava.lang.String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Todo1"
+                ]
+              },
+              {
+                "cells": [
+                  "Todo2"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Todo items created successfully",
+            "match": {
+              "location": "com.polymer.step_definitions.TodoStepDefs.todo_items_created_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@T1"
+          },
+          {
+            "name": "@All"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-14T22:13:06.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2066000000,
               "status": "passed"
             },
             "match": {
@@ -22,11 +147,11 @@
         "after": [
           {
             "result": {
-              "duration": 840000000,
+              "duration": 852000000,
               "status": "passed"
             },
             "match": {
-              "location": "com.polymer.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+              "location": "com.polymer.step_definitions.Hooks.tearDown()"
             }
           }
         ],
@@ -35,19 +160,19 @@
         "steps": [
           {
             "result": {
-              "duration": 2008000000,
+              "duration": 1495000000,
               "status": "passed"
             },
             "line": 15,
-            "name": "the user is in the main page",
+            "name": "the user is on the main page",
             "match": {
-              "location": "com.polymer.step_definitions.TodoStepDefs.theUserIsInTheMainPage()"
+              "location": "com.polymer.step_definitions.TodoStepDefs.theUserIsOnTheMainPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 235000000,
               "status": "passed"
             },
             "line": 16,
@@ -65,7 +190,7 @@
           },
           {
             "result": {
-              "duration": 538000000,
+              "duration": 537000000,
               "status": "passed"
             },
             "line": 17,
@@ -83,7 +208,7 @@
           },
           {
             "result": {
-              "duration": 711000000,
+              "duration": 401000000,
               "status": "passed"
             },
             "line": 18,
@@ -101,30 +226,25 @@
                 "cells": [
                   "Todo2"
                 ]
-              },
-              {
-                "cells": [
-                  "Todo3"
-                ]
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 448000000,
+              "duration": 427000000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user edit \"Todo3\" as \"Todo3New\"",
+            "line": 21,
+            "name": "user edit \"Todo2\" as \"Todo2New\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Todo3\"",
+                  "val": "\"Todo2\"",
                   "offset": 10
                 },
                 {
-                  "val": "\"Todo3New\"",
+                  "val": "\"Todo2New\"",
                   "offset": 21
                 }
               ],
@@ -134,10 +254,10 @@
           },
           {
             "result": {
-              "duration": 55000000,
+              "duration": 39000000,
               "status": "passed"
             },
-            "line": 23,
+            "line": 22,
             "name": "Todo item updated successfully",
             "match": {
               "location": "com.polymer.step_definitions.TodoStepDefs.todo_item_updated_successfully()"
@@ -148,6 +268,9 @@
         "tags": [
           {
             "name": "@T2"
+          },
+          {
+            "name": "@All"
           }
         ]
       }
