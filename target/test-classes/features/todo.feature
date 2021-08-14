@@ -18,5 +18,6 @@ Feature: Create Todo Items
     And user creates to do items as below
       | Todo1 |
       | Todo2 |
-    And user edit "Todo2" as "Todo2New"
+      | Todo3 |
+    And user edit "Todo3" as "Todo3New"
     Then Todo item updated successfully
