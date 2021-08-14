@@ -1,3 +1,4 @@
+
 # Polymer TodoMVC  Automation Testing & Instructions
 
 
@@ -60,8 +61,4 @@ https://github.com/sugarfatih/polymerDemo
 
 2021 Aug®
 
-
-  
-
- 
 
